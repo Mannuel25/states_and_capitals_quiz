@@ -75,7 +75,7 @@ def capitalQuiz():
 						print('Wrong!.. (:')
 						for key,value in states_capital.items():
 							if key == random_state:
-								print(f'The capital for {key} is {value}')
+								print(f'The capital for {key} state is {value}')
 
 			play = input('\nGuess again?: ')
 
