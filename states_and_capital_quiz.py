@@ -59,9 +59,11 @@ def capitalQuiz():
 					print(f'\n{index}. {key} : {value}') 
 					index += 1
 			elif play.title() == 'SCOREBOARD' or play.title() == 'Scoreboard':
+				pass_accuracy = (correct_guess / no_of_guess) * 100
 				print(f'\nNumber of guesses: {no_of_guess}')
 				print(f'Correct guesses: {correct_guess}')
 				print(f'Incorrect guesses: {incorrect_guess}')
+				print('Pass accuracy: {:.2f}%'.format(pass_accuracy))
 			elif play.title() == 'Yes' or play.title() == 'YES':	
 				states = [i for i in states_capital]
 				random_state = ''.join(random.sample(states,1))
@@ -80,6 +82,11 @@ def capitalQuiz():
 			play = input('\nTake quiz again?: ')
 
 capitalQuiz()
+
+
+
+
+
 
 
 
