@@ -68,18 +68,23 @@ def capitalQuiz():
 				capital = input(f'Enter the capital for {random_state} state: ')
 				no_of_guess += 1
 				if states_capital[random_state] == capital.title():
-					print('Bravo!... :)')
+					print('Bravo!... 😉')
 					correct_guess += 1
 				else:
 						incorrect_guess += 1
-						print('Wrong!.. (:')
+						print('Wrong... 😢')
 						for key,value in states_capital.items():
 							if key == random_state:
 								print(f'The capital for {key} state is {value}')
 
-			play = input('\nGuess again?: ')
+			play = input('\nTake quiz again?: ')
 
 capitalQuiz()
+
+
+
+
+
 
 
 
